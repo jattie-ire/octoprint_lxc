@@ -22,14 +22,17 @@ The container was created through trail and error using the [instructions on the
    * Ubuntu 22.04 LTS
    * Mini-forge Python distribution
    * Python 3.9 Virtual Environment throug Mini-Forge
-   * Octoprint 1.8.7
-   * avahi-daemon
-   * haproxy
+   * Octoprint 1.8.7 
+   * avahi-daemon - making connections to <hostname>.local possible
+   * haproxy - for hosting octoprint on port 80 and rdirecting the webcam if enabled and set up
+   * libv4l-dev - needed by mjpg-streamer
    * mjpg-streamer - compiled on seperate instance and copied over
 
 ## Steps to clone and run this
 
   * Create a running instance of Linux with LXC installed
+  * Create a bridged network setup for use by LXC
+  * Initialise LXD
   * Create an account with sudo permissions
   * Download the octoprint image archive
   * Run the lxc restore command
@@ -37,4 +40,4 @@ The container was created through trail and error using the [instructions on the
   * Start the container
   * Initialse and use octoprint
 
-
+ 
