@@ -3,7 +3,9 @@ octoprint_lxc creates a lxc(Linux Container) distibubion for octoprint. LXC ship
 
 ## Why do it
 
-I am an Industrial Software Engineer and a 3D print hobby enthusiast with a good working knowledge of Linux, LXC and automation and needed a more robust and reliable setup for my 3D printer. I though this will be a uick implementation and it ended being quite the challenge to get all the issues resolved since I do not see many other similar implemenations on a Linux containers. I run machine learning environments on Linux containers and found them to be extremely robust and reliable and simple to maintain, set up and use. The downside is the Linux commandline environment and linux commands in a shell, but I did all the hard work and feel confident that it can be replicated fairly easily. 
+I am an Industrial Software Engineer and a 3D print hobby enthusiast with a good working knowledge of Linux, LXC and automation and needed a more robust and reliable setup for my 3D printer. I though this will be a quick implementation and it ended being quite the challenge to get all the issues resolved.  Since I do not seem to see any other similar implemenations on a Linux containers. I run machine learning environments on Linux containers and found them to be extremely robust and reliable and simple to maintain, set up and use. The downside is the Linux commandline environment and linux commands in a shell, but I did all the hard work and feel confident that it can be replicated fairly easily. 
+
+The remaining challenge is hosting the image or opening my LXC server to the web. I'll dig deeper to determine what is most viable. 
 
   * Octoprint runs a lot faster on other hardwar than a Paspberry Pi
   * Running Octopring in a container allows for running multiple instances on the same hardware
