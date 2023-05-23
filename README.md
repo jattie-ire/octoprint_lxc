@@ -32,10 +32,10 @@ The container was created through trail and error using the [instructions on the
 
 ## Steps to clone and run this
 
-  * Create a running instance of Linux with LXC installed
+  * [Create a running instance of Linux with LXC installed](https://www.linuxtechi.com/install-ubuntu-server-22-04-step-by-step/)
   * Create a bridged network setup for use by LXC
-  * Initialise LXD
-  * Create an account with sudo permissions
+  * [Initialise LXD](https://linuxcontainers.org/lxd/docs/latest/howto/initialize/)
+  * [Create a Linux user account with sudo permissions](https://www.digitalocean.com/community/tutorials/how-to-create-a-new-sudo-enabled-user-on-ubuntu-22-04-quickstart)
   * Clone this git repo to get the archived and shell scripts
   * Combine the split archives in the [archive](archive/) folder to one file using the included script, `archives_combine.sh`
   * Run the lxc restore command on the combined archive, see script `lxc_import_archive.sh`
