@@ -37,9 +37,9 @@ The container was created through trail and error using the [instructions on the
   * Initialise LXD
   * Create an account with sudo permissions
   * Clone this git repo to get the archived and shell scripts
-  * Combine the split archives in the archive folder to one file
-  * Run the lxc restore command on the combined archive
+  * Combine the split archives in the [archive](archive/) folder to one file using the included script, archives_combine.sh
+  * Run the lxc restore command on the combined archive, see script lxc_import_archive.sh
   * Identify and amend the printer and webcam ports passed to the container (if needed)
-  * Start the container
-  * Initialse and use octoprint
+  * Start the container, using command `lxc start octo`
+  * Initialse and use octoprint from the browser interface, http://octo.local
 
