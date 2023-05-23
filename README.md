@@ -36,10 +36,10 @@ The container was created through trail and error using the [instructions on the
   * Create a bridged network setup for use by LXC
   * Initialise LXD
   * Create an account with sudo permissions
-  * Download the octoprint image archive
-  * Run the lxc restore command
-  * Identify and amend the priner and webcam port passed to the container if needed
+  * Clone this git repo to get the archived and shell scripts
+  * Combine the split archives in the archive folder to one file
+  * Run the lxc restore command on the combined archive
+  * Identify and amend the printer and webcam ports passed to the container (if needed)
   * Start the container
   * Initialse and use octoprint
 
- 
