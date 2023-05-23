@@ -11,6 +11,8 @@ The remaining challenge was posting the image. I managed to overcome that by sli
   * Running Octopring in a container allows for running multiple instances on the same hardware
   * Pass only the requird resources through to the container, i.e. one port for the printer and one port for a webcam.
   * A USB hub can extend the available ports easily.
+  * Automated or manual snapshots can be set up to roll back on failed updates and plugin install that breaks the system.
+  * Cloned sutupes can be used for experimentation without breaking a working setup.
 
 ## Known contraints running on Linux
 
