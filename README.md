@@ -41,7 +41,7 @@ The container was created through trail and error using the [instructions on the
   * Clone this git repo to get the archived and shell scripts
   * Combine the split archives in the [archive](archive/) folder to one file using the included script, `archives_combine.sh`
   * Run the lxc restore command on the combined archive, see script `lxc_import_archive.sh`
-  * Identify and amend the printer and webcam ports passed to the container (if needed)
+  * Identify and amend the printer and webcam ports passed to the container (if needed) and amend with included [shell scrip](https://github.com/jattie-ire/octoprint_lxc/blob/main/setup_container_usb_devices.sh)
   * Start the container, using command `lxc start octo`
   * Initialse and use octoprint from the browser interface, http://octo.local
 
