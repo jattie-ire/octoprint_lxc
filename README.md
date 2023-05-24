@@ -46,3 +46,4 @@ The container was created through trail and error using the [instructions on the
   * Start the container, using command `lxc start octo`
   * Initialse and use octoprint from the browser interface, http://octo.local
 
+Please leave comments of your experience in the [discussion section](https://github.com/jattie-ire/octoprint_lxc/discussions), I would love to hear what you think and what can be improved.
