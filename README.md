@@ -1,4 +1,5 @@
 # octoprint_lxc
+Please refer to the [wiki](https://github.com/jattie-ire/octoprint_lxc/wiki) for more detailed descriptions on the various steps mentioned below.
 octoprint_lxc creates a lxc(Linux Container) distibubion for octoprint. LXC ships with ubuntu as a snap package.
 
 ## Why do it
