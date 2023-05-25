@@ -36,7 +36,7 @@ The container was created through trail and error using the [instructions on the
 ## Steps to clone and run this
 
   * [Create a running instance of Linux with LXC installed](https://www.linuxtechi.com/install-ubuntu-server-22-04-step-by-step/)
-  * Create a [bridged network](wiki/Bridged-Network-Setup-on-the-host) setup for use by LXC
+  * Create a [bridged network](../wiki/Bridged-Network-Setup-on-the-host) setup for use by LXC
   * [Initialise LXD](https://linuxcontainers.org/lxd/docs/latest/howto/initialize/)
   * [Create a Linux user account with sudo permissions](https://www.digitalocean.com/community/tutorials/how-to-create-a-new-sudo-enabled-user-on-ubuntu-22-04-quickstart)
   * Clone this git repo to get the archived and shell scripts
