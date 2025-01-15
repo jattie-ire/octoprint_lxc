@@ -1,35 +1,35 @@
 # octoprint_lxc
 Please refer to the [wiki](https://github.com/jattie-ire/octoprint_lxc/wiki) for more detailed descriptions on the various steps mentioned below.
-octoprint_lxc creates a lxc(Linux Container) distibubion for octoprint. LXC ships with ubuntu as a snap package.
+octoprint_lxc creates a lxc(Linux Container) distribution for octoprint. LXC ships with ubuntu as a snap package.
 
 ## Why do it
 
-As a 3D printer hobby enthusiast, I needed a more robust and reliable setup for my 3D printer. I though this will be a quick implementation and it ended being quite the challenge to get the setup working.  Since I am proficient with Linux containers and found them to be extremely robust and reliable and simple to maintain, I decided to try it our for my 3D printing setup. The downside for the uninitiated is the Linux commandline environment and linux commands in a shell, but I did all the hard work and feel confident that it can be replicated fairly easily. 
+As a 3D printer hobby enthusiast, I needed a more robust and reliable setup for my 3D printer. I though this will be a quick implementation and it ended being quite the challenge to get the setup working.  Since I am proficient with Linux containers and found them to be extremely robust and reliable and simple to maintain, I decided to try it our for my 3D printing setup. The downside for the uninitiated is the Linux commandline environment and linux commands, but I did all the hard work and feel confident that it can be replicated fairly easily. 
 
 The remaining challenge was posting the image. I managed to overcome that by slicing it up in github acceptable size chunks.
 
-  * Octoprint runs a lot faster on PC hardware compared to a Paspberry Pi
+  * Octoprint runs a lot faster on PC hardware compared to a Raspberry Pi
   * Running Octopring in a container allows for running multiple instances on the same hardware
-  * Pass only the requird resources through to the container, i.e. one port for the printer and one port for a webcam.
+  * Pass only the required ressources through to the container, i.e. one port for the printer and one port for a webcam.
   * A USB hub can extend the available ports easily.
   * Automated or manual snapshots can be set up to roll back on failed updates and plugin install that breaks the system.
-  * Cloned sutupes can be used for experimentation without breaking a working setup.
+  * Cloned setup can be used for experimentation without breaking a working setup.
 
 ## Known contraints running on Linux
 
   * Some plugins fails to run on the latest versions of Python due to dependant library updates and is not easiliy fixed.
-  * The currnet container has Python 3.9 implemented to git all the basics working and runs Octoprint 1.8.7
+  * The current container has Python 3.9 implemented to git all the basics working and runs Octoprint 1.8.7
 
 ## What is in the container
-The container was created through trail and error using the [instructions on the Octopring forum](https://community.octoprint.org/t/setting-up-octoprint-on-a-raspberry-pi-running-raspberry-pi-os-debian/2337) as a guide.
+The container was created through trials and errors using the [instructions on the Octopring forum](https://community.octoprint.org/t/setting-up-octoprint-on-a-raspberry-pi-running-raspberry-pi-os-debian/2337) as a guide.
 
  Components Installed:
    * Ubuntu 22.04 LTS
    * [Miniforge Python distribution](https://github.com/conda-forge/miniforge)
-   * Python 3.9 Virtual Environment throug Miniforge
+   * Python 3.9 Virtual Environment through Miniforge
    * Octoprint 1.8.7 through pip install
    * avahi-daemon - making connections to <hostname>.local possible
-   * haproxy - for hosting octoprint on port 80 and rdirecting the webcam if enabled and set up
+   * haproxy - for hosting octoprint on port 80 and redirecting the webcam if enabled and set up
    * libv4l-dev - needed by mjpg-streamer
    * mjpg-streamer - compiled on seperate instance and copied over to the container instance
 
